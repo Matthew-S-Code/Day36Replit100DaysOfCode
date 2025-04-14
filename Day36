@@ -1,0 +1,19 @@
+names = []
+
+def printList():
+ print()
+ for i in names:
+   print(i)
+ print()
+
+while True:
+  fName = input("First name: ").strip().capitalize()
+  sName = input("Last name: ").strip().capitalize()
+  name = f"{fName} {sName}"
+  if name not in names and sName not in names:
+    names.append(name)
+  else:
+    print()
+    print("No duplicate name permitted")
+  printList()
+  
